@@ -122,6 +122,9 @@ jobs:
 
     dev-deploy:
       needs: docker
+      environment:
+        name: development
+        url: https://...
       runs-on: ubuntu-latest
       steps:
         - name: Checkout Repo
